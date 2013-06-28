@@ -1,0 +1,15 @@
+{application, spacak,
+ [
+  {description, "Geospatial Indexing built on the Riak Distributed Database"},
+  {vsn, "0.1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  riak_api,
+                  riak_core,
+                  riak_kv
+                 ]},
+  {mod, { spacak_app, []}},
+  {env, []}
+ ]}.

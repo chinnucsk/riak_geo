@@ -1,0 +1,12 @@
+.PHONY: deps test
+
+all: deps compile
+
+compile:
+	./rebar compile
+
+deps:
+	./rebar get-deps
+
+clean:
+	./rebar clean
